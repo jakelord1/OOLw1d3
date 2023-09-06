@@ -23,6 +23,16 @@ public:
         c.Enter(d.GetA() * b + a * d.GetB(), b * d.GetB());
         return c;
     }
+    Fraction Minus(Fraction d) {
+        Fraction c;
+        c.Enter(d.GetA() * b - a * d.GetB(), b * d.GetB());
+        return c;
+    }
+    Fraction Mult(Fraction d) {
+        Fraction c;
+        c.Enter(d.GetA() * a, d.GetB()*b);
+        return c;
+    }
 };
 int main()
 {
