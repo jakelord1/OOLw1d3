@@ -2,10 +2,31 @@
 //
 
 #include <iostream>
-
+using namespace std;
+class Fraction {
+private:
+    int a;
+    int b;
+public:
+    int GetA() {
+        return a;
+    }
+    int GetB() {
+        return b;
+    }
+    void Enter(int _a, int _b) {
+        a = _a;
+        b = _b;
+    }
+    Fraction Summ(Fraction d) {
+        Fraction c;
+        c.Enter(d.GetA() * b + a * d.GetB(), b * d.GetB());
+        return c;
+    }
+};
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Hello World!\n";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
