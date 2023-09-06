@@ -46,4 +46,35 @@ int main()
     Fraction B;
     B.Enter(8, 4);
     A.Show();
+    cout << endl;
+    B.Show();
+    cout << endl;
+
+    A.Show();
+    cout << " + ";
+    B.Show();
+    cout << " = ";
+    A.Summ(B).Show();
+    cout << endl;
+
+    A.Show();
+    cout << " - ";
+    B.Show();
+    cout << " = ";
+    A.Minus(B).Show();
+    cout << endl;
+
+    A.Show();
+    cout << " * ";
+    B.Show();
+    cout << " = ";
+    A.Mult(B).Show();
+    cout << endl;
+
+    A.Show();
+    cout << " / ";
+    B.Show();
+    cout << " = ";
+    A.Equal(B).Show();
+    cout << endl;
 }
